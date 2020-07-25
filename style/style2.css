@@ -1,0 +1,496 @@
+/*font-family: 'Rowdies', cursive;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: gray;
+    height: 1000vh;
+}
+
+.burger {
+    position: fixed;
+    top: 40px;
+    right: 140px;
+    font-size: 40px;
+    line-height: 50px;
+    transition: .3s linear;
+    z-index: 1;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 40px;
+    right: 140px;
+    font-size: 40px;
+    line-height: 50px;
+    transition: .3s linear;
+    z-index: 1;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    color: coral;
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: whitesmoke;
+    transition: .3s linear;
+    z-index: 1;
+}
+
+.fas {
+    display: none;
+    color: black;
+
+}
+
+i.show {
+    display: block;
+
+}
+
+aside.show {
+    left: 0;
+}
+
+nav ul a {
+    display: inline-block;
+    margin: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+
+header {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-image: url(../img/OW2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-color: gray;
+    opacity: 0.8;
+}
+
+div.title h1 {
+    font-size: 42px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+main {
+    height: 200vh;
+}
+
+div.oNas {
+    max-width: 70vw;
+    height: 600px;
+
+    margin: 10px auto;
+}
+
+div.oNas h2 {
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.oNas p {
+    padding: 20px;
+    font-family: 'Rowdies';
+}
+
+div.oNas p span {
+    font-size: 20px;
+    padding-left: 300px;
+}
+
+
+div.oNas div.foto {
+    max-height: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+div.foto h3 {
+    text-align: center;
+}
+
+div.okolica {
+    max-width: 70vw;
+    height: 600px;
+
+    margin: 10px auto;
+}
+
+section article:nth-child(2) {
+    background-image: url(../img/OWŁ1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.okolica h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.okolica p {
+    padding: 20px;
+    font-family: 'Rowdies';
+}
+
+div.okolica p span {
+    font-size: 20px;
+    padding-left: 300px;
+}
+
+div.okolica div.mapa {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+article div.pudlo {
+    min-height: 310vh;
+    max-width: 1000px;
+    margin: 10px auto;
+
+}
+
+article div.pudlo h2 {
+
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+div.atrakcje {
+    display: flex;
+    max-width: 70vw;
+
+
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 60vw;
+    height: 60vw;
+
+
+}
+
+div.atrakcje h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.atrakcje div.foto2 {
+    flex-basis: 40%;
+    height: 40%;
+
+    flex-grow: 1;
+    border-radius: 35px;
+
+    background-color: turquoise;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 0 0 6px gray, 0 0 0 12px turquoise;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+
+div.atrakcje div.foto2:hover {
+
+    cursor: pointer;
+    box-shadow: 0 0 0 10px gray, 0 0 0 20px turquoise;
+}
+
+div.atrakcje div.foto2 a {
+    text-decoration: none;
+    color: black;
+}
+
+div.foto2 img {
+    width: 100%;
+    height: 45vh;
+
+    border-radius: 35px;
+
+}
+
+div.foto2 figcaption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 2px;
+
+}
+
+article div.pudlo2 {
+    min-height: 100vh;
+    width: 100%;
+    margin: 10px auto;
+    background-image: url(../img/OW3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+article div.pudlo2 h2 {
+
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+article div.opis {
+    display: flex;
+    max-width: 70vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 40vw;
+    height: 30vw;
+}
+
+article div.opis div.paczki {
+    flex-basis: 20%;
+    height: 100%;
+    flex-grow: 1;
+    border-radius: 35px;
+    background-color: turquoise;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Rowdies', cursive;
+
+    overflow: hidden;
+}
+
+
+article div.opis div.paczki p {
+    text-align: center;
+    padding: 5px;
+}
+
+article div.naszeDomki {
+
+    height: 800px;
+    max-width: 1200px;
+    margin: 10px auto;
+
+    overflow: hidden;
+    font-family: 'Rowdies', Arial, Helvetica, sans-serif;
+}
+
+article div.naszeDomki h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+article div.naszeDomki p {
+    text-align: center;
+    font-size: 20px;
+    padding: 35px;
+    margin: 55px;
+
+
+}
+
+div.pudlo3 {
+
+    max-height: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+div.mini {
+    display: flex;
+    max-width: 70vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 900px;
+    height: 300px;
+
+}
+
+div.mini div {
+
+
+    flex-grow: 1;
+    border-radius: 35px;
+
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Rowdies', cursive;
+
+    overflow: hidden;
+}
+
+div.jeden {
+    background-image: url(../img/salon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.dwa {
+    background-image: url(../img/sypialnia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.trzy {
+    background-image: url(../img/łazienka.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article div.galeria {
+
+    width: 1200px;
+    height: 800px;
+    margin: 10px auto;
+}
+
+article div.galeria h2 {
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+}
+
+div.galeria2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.galeria2 div {
+    width: 300px;
+    height: 300px;
+
+    margin: 20px 40px;
+    overflow: hidden;
+}
+
+div.galeria2 div img {
+    max-height: 100%;
+
+}
+
+body.blur {
+    filter: blur(2px);
+}
+
+.modal-wrap {
+    display: none;
+}
+
+.modal-wrap.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-wrap.active .modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+    border: 2px solid black;
+    /* background-color: black; */
+}
+
+.modal .top {
+    flex-grow: 1;
+    background-color: cadetblue;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    font-family: arial;
+    font-size: 30px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    background-color: greenyellow;
+}
