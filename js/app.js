@@ -29,3 +29,40 @@ arrow.addEventListener('click', function () {
 //     document.querySelector('.modal-wrap').classList.remove('active');
 //     document.querySelector('body').classList.remove('blur')
 // })
+
+const btnPW = document.querySelector("button.wysoki");
+const btnPS = document.querySelector("button.sredni");
+const btnPN = document.querySelector("button.niski");
+const okPW = document.querySelector("div.pol.wys");
+const okPS = document.querySelector("div.pol.sre");
+const okPN = document.querySelector("div.pol.nis");
+const btnZ = document.querySelector("button.zamek");
+const btnZ1 = document.querySelector("button.zamek1");
+const btnZ2 = document.querySelector("button.zamek2");
+
+btnPW.addEventListener('click', function () {
+    okPW.classList.add('activ');
+    okPW.classList.remove('wys');
+})
+btnPS.addEventListener('click', function () {
+    okPS.classList.add('activ');
+    okPS.classList.remove('sre');
+})
+btnPN.addEventListener('click', function () {
+    okPN.classList.add('activ');
+    okPN.classList.remove('nis');
+})
+
+
+btnZ.addEventListener('click', function () {
+    okPW.classList.add('wys');
+    okPW.classList.remove('activ');
+})
+btnZ1.addEventListener('click', function () {
+    okPS.classList.add('sre');
+    okPS.classList.remove('activ');
+})
+btnZ2.addEventListener('click', function () {
+    okPN.classList.add('nis');
+    okPN.classList.remove('activ');
+})
