@@ -9,7 +9,7 @@
 body {
     position: relative;
     background-color: gray;
-    height: 1000vh;
+    height: 1100vh;
 }
 
 .burger {
@@ -483,6 +483,12 @@ article div.cennik div.textLista {
     text-align: left;
 }
 
+.textLista p {
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
 article div.cennik button {
     font-size: 24px;
     padding: 10px;
@@ -537,6 +543,65 @@ button.zamek2 {
     border-radius: 15px;
 }
 
+section div.formK {
+
+    width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    text-align: center;
+
+}
+
+div.zbior2 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div.pisz {
+
+    height: 400px;
+    width: 400px;
+}
+
+div.infOnas {
+
+    height: 400px;
+    width: 400px;
+    font-size: 24px;
+}
+
+div.infOnas p {
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.pisz input {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+
+.pisz textarea {
+    margin-top: 25px;
+    height: 280px;
+    font-size: 20px;
+}
+
+.pisz button {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.pisz button:hover {
+    background-color: turquoise;
+
+    cursor: pointer;
+}
+
 
 
 
@@ -555,4 +620,6 @@ footer {
     right: 0;
     height: 10vh;
     background-color: greenyellow;
+    text-align: center;
+    padding: 20px;
 }
